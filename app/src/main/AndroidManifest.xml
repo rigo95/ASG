@@ -16,9 +16,11 @@
             >
 
         </activity>
-        <activity android:name=".Activity2" />
+        <activity android:name=".Activity2"
+            android:theme="@style/AppTheme"/>
         <activity android:name=".Formulario"
-            android:theme="@style/NoActionBar"/>
+            android:theme="@style/NoActionBar"
+            />
         <activity android:name=".Splash"
             android:theme="@style/NoActionBar">
             <intent-filter>

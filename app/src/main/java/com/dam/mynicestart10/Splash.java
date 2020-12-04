@@ -10,6 +10,13 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ventana de bienvenida con una animacion y un scrim
+@author alberto soriano
+@see LoginActivity
+ */
+
+
 public class Splash extends AppCompatActivity {
 
     ImageView mySubtitle;
@@ -28,7 +35,7 @@ public class Splash extends AppCompatActivity {
         mySubtitle.startAnimation(myanim);
 
         Animation myanim1 = AnimationUtils.loadAnimation(this, R.anim.move);
-        mySubtitle.startAnimation(myanim);
+        mySubtitle1.startAnimation(myanim1);
 
 
     }

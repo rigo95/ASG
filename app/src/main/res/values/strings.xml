@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyNiceStart1.0</string>
+    <string name="action_settings">úsame</string>
+    <string name="app_bar_menu_share">Share</string>
+    <string name="app_bar_menu_bookmark">Bookmark</string>
+    <string name="app_bar_menu_search">Search</string>
+    <string name="bottom_nav_favorites_title">primer</string>
+    <string name="bottom_nav_music_title">segun</string>
+    <string name="bottom_nav_places_title">tercer</string>
+    <string name="bottom_nav_news_title">cuarter</string>
+    <string name="text_body_2">String1</string>
 </resources>

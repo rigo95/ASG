@@ -7,6 +7,7 @@
     tools:context=".LoginActivity"
     >
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="764dp"
@@ -19,8 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.507"
         app:srcCompat="@drawable/otono" />
-
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
@@ -66,33 +65,31 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:text="acceder"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="@id/button2"
-        app:layout_constraintEnd_toStartOf="@id/button2"
-        app:layout_constraintHorizontal_bias="0.527"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        style="@style/btn_negro"
-        android:onClick="acceder"/>
-
-    <Button
-        android:id="@+id/button2"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/black"
-        android:text="resgistrate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        android:onClick="Registro"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/password">
 
 
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_negro"
+            android:layout_marginTop="8dp"
+            android:onClick="acceder"
+            android:text="acceder" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/black"
+            android:onClick="Registro"
+            android:text="resgistrate" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
